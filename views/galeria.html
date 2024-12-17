@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <!--Título y barra de navegación-->
+        <h1>Gimnasio</h1>
+        <nav class="navigationBar">
+            <ul class="navigationBarList">
+                <li>
+                    <a class="enlace" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="enlace active" href="#">Galeria</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./presupuesto.html">Presupuesto</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="menu-galeria">
+        <section id="galeria">
+            <!--sección donde se encuentra la galería-->
+            <img src="../images/img1.png" alt="galeria de imagenes" height="1280" width="901">
+            <img src="../images/img2.jpg" alt="galeria de imagenes" height="1280" width="853">
+            <img src="../images/img3.jpg" alt="galeria de imagenes" height="853" width="1280">
+            <img src="../images/img4.jpg" alt="galeria de imagenes" height="1280" width="853">
+            <img src="../images/img5.jpg" alt="galeria de imagenes" height="1280" width="973">
+            <img src="../images/img6.jpg" alt="galeria de imagenes" height="1280" width="985">
+        </section>
+
+        <section id="contenedor-principal">
+             <!--ventana para imagen activa-->
+            <div id="contenedor-interno">
+                <img id="img-activa" src="../images/img1.png" alt="galeria de imagenes">
+                <button id="btn-cierra" type="button">x</button>
+                <button id="btn-retrocede" type="button">&lt;</button>
+                <button id="btn-adelanta" type="button">&gt;</button>
+            </div>
+        </section>
+    </main>
+     <!--Pie de página con los logotipos de varias redes sociales,dirección de empresa y aviso legal-->
+    <footer>
+        <div class="iconos">
+            <a href="https://twitter.com" title="enlace que me lleva twitter" target="_blank">
+                <img src="../images/twitter.png" alt="twitter" style="width:64px;height:64px;border:0;">
+            </a>
+            <a href="https://www.instagram.com/" title="enlace que me lleva instagram" target="_blank">
+                <img src="../images/instagram.png" alt="instagram" style="width:64px;height:64px;border:0;">
+            </a>
+            <a href="https://www.youtube.com/" title="enlace que me lleva youtube" target="_blank">
+                <img src="../images/youtube.png" alt="youtube" style="width:64px;height:64px;border:0;">
+            </a>
+        </div>
+        <p>Todos los derechos reservados<br>c/Alonso Cano, 54</p>  
+    </footer>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <!--Título y barra de navegación-->
+        <h1>Gimnasio</h1>
+        <nav class="navigationBar">
+            <ul class="navigationBarList">
+                <li>
+                    <a class="enlace active" href="#">Inicio</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./views/galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./views/presupuesto.html">Presupuesto</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./views/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Portada donde se encuentran las 4 secciones-->
+        <section class="hero">
+            <h2>Todo tipo de actividades</h2>
+            <p>En Gimnasio disfrutarás de una amplia gama de actividades entre las que se incluyen nuevos
+                espacios y conceptos de entrenamiento. El club está diseñado para ofrecer un alto nivel de
+                digitalización y personalización en todas sus actividades, creando una experiencia inmersiva única
+                acompañada del material de las mejores marcas en todo momento.</p>
+        </section>
+        <section class="contenido">
+            <h2>Espacio musculación<br>Desarrolla tu fuerza</h3>
+            <p>Tanto si quieres ganar fuerza y volumen como tonificar tu cuerpo, nuestra zona de PESO LIBRE te ayudará a
+                conseguir tus objetivos.<br><br>
+                Nuestro centro deportivo cuenta con numerosos racks y multipowers, 11 bancos reclinables, 4 juegos
+                dobles de mancuernas y plataformas de halterofilia ELEIKO.<br><br>
+                ¿Nuevo en el gimnasio? nuestra zona de musculación guiada con el mejor equipamiento de TECHNOGYM es
+                ideal para ti.<br><br>
+                El mejor gimnasio en Madrid cuenta con máquinas con su propia pantalla táctil para conectarte a través
+                de tu Smartphone y registrar todos tus entrenamientos. Obtendrás todos los beneficios del deporte.</p>
+        </section>
+        <section class="contenido">
+            <h2>Espacio cardio training<br>Disfruta cada entrenamiento</h3>
+            <p>Nuestra sala de Cardio Training tiene todo lo necesario para el entrenamiento personal llevando el
+                multideporte a otro nivel.<br><br>
+                Mejora tu condición física en esta zona ideal para el entrenamiento de cardio, con equipamiento de la
+                marca TECHNOGYM gama Unity, cintas de correr, bicicletas, máquina de subir escaleras, máquina de
+                fortalecimiento de brazos, etc.<br><br>
+                Entrena de forma segura, para prevenir lesiones con nuestros planes de entrenamiento. Estarás totalmente
+                conectado porque cada máquina cuenta con acceso a Internet, televisión, YouTube, videojuegos, simulador
+                de carreras e incluso ¡Netflix! Como ves no te aburrirás con el gimnasio que tienes cerca de tu casa.
+                ¡Ah! También puedes medir tu entrenamiento conectándote a las máquinas con tu SmartPhone o móvil para
+                registrar tus avances y superarte día a día. Somos el gimnasio líder en digitalización y
+                personalización.</p>
+        </section>
+        <aside>
+            <!--sección donde se cargan noticias desde un archivo externo(JSON)-->
+            <h3>Noticias</h3>
+            <div id="noticias"></div>
+        </aside>
+    </main>
+    <!--Pie de página con los logotipos de varias redes sociales,dirección de empresa y aviso legal-->
+    <footer>
+        <div class="iconos">
+            <a href="https://twitter.com" title="enlace que me lleva twitter" target="_blank">
+                <img src="./images/twitter.png" alt="twitter" style="width:64px;height:64px;border:0;">
+            </a>
+            <a href="https://www.instagram.com/" title="enlace que me lleva instagram" target="_blank">
+                <img src="./images/instagram.png" alt="instagram" style="width:64px;height:64px;border:0;">
+            </a>
+            <a href="https://www.youtube.com/" title="enlace que me lleva youtube" target="_blank">
+                <img src="./images/youtube.png" alt="youtube" style="width:64px;height:64px;border:0;">
+            </a>
+        </div>
+        <p>Todos los derechos reservados<br>c/Alonso Cano, 54</p>
+
+    </footer>
+    <script src="./js/javaScript.js"></script>
+</body>
+
+</html>

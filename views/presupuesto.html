@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <!--Título y barra de navegación-->
+        <h1>Gimnasio</h1>
+        <nav class="navigationBar">
+            <ul class="navigationBarList">
+                <li>
+                    <a class="enlace" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a class="enlace active" href="#">Presupuesto</a>
+                </li>
+                <li>
+                    <a class="enlace" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Formulario dividido en datos del contacto y presupuesto-->
+    <form id="formulario" name="formulario" method="post" action="procesar.php">
+        <fieldset>
+            <!--Datos del contacto-->
+            <legend>Datos del contacto</legend>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+            </div>
+            <div>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+            </div>
+            <div>
+                <label for="telefono">Teléfono: </label>
+                <input type="text" id="telefono" name="telefono" placeholder="Escriba su teléfono">
+            </div>
+            <div>
+                <label for="correo">Correo electrónico: </label>
+                <input type="text" id="correo" name="correo" placeholder="Escriba su correo electrónico">
+            </div>
+        </fieldset>
+        <fieldset>
+            <!--Presupuesto-->
+            <legend>Presupuesto</legend>
+            <div class="productos">
+                <h5>Producto</h5>
+                <label for="grupo">Clases en grupo: 40€</label>
+                <input type="radio" id="grupo" value="40" name="producto"> 
+                <label for="individuales">Clases individuales: 80€</label>          
+                <input type="radio" id="individuales" value="80" name="producto">
+                <label for="sala">Entrada a sala: 20€</label>
+                <input type="radio" id="sala" value="20" name="producto">
+            </div>
+            <div class="extras">
+                <h5>Extras</h5>
+                <label for="nutricion">Plan nutricional: 30€</label>
+                <input type="checkbox" id="nutricion" value=30 name="nutricion">
+                <label for="sauna">Acceso a sauna: 10€</label>
+                <input type="checkbox" id="sauna" value="10" name="sauna">
+            </div>
+            <div>
+                <h5>Suscripción</h5>
+                <select name="suscripcion" id="suscripcion">
+                    <option value="1">1 mes</option>
+                    <option value="3">3 meses</option>
+                    <option value="12">12 meses</option>
+                </select>
+            </div>
+            <div>
+                <label for="total">Total:</label>
+                <input type="number" id="total" readonly>
+            </div>  
+            <div>
+                <label for="privacidad">He leido la política de privacidad</label>
+                <input type="checkbox" id="privacidad" name="privacidad">
+            </div>
+            <div>
+                <input type="submit" id="enviar" value="Enviar">
+                <input type="reset" id="borrar" value="Borrar">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <!--Pie de página con los logotipos de varias redes sociales,dirección de empresa y aviso legal-->
+        <div class="iconos">
+            <a href="https://twitter.com" title="enlace que me lleva twitter" target="_blank">
+                <img src="../images/twitter.png" alt="twitter" style="width:64px;height:64px;border:0;">
+            </a>
+            <a href="https://www.instagram.com/" title="enlace que me lleva instagram" target="_blank">
+                <img src="../images/instagram.png" alt="instagram" style="width:64px;height:64px;border:0;">
+            </a>
+            <a href="https://www.youtube.com/" title="enlace que me lleva youtube" target="_blank">
+                <img src="../images/youtube.png" alt="youtube" style="width:64px;height:64px;border:0;">
+            </a>
+        </div>
+        <p>Todos los derechos reservados<br>c/Alonso Cano, 54</p>
+
+    </footer>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>
