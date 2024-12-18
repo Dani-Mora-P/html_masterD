@@ -18,7 +18,8 @@ function validar(){  //función para validar el presupuesto
     var privacidad = document.getElementById("privacidad");
     var correo = document.getElementById("correo").value;
     var productos = document.getElementsByName('producto');
-    
+    var suscripcion = document.getElementById("suscripcion").value;
+
    ////CONDICIONES PARA EL NOMBRE
 
     if(nombre == null || nombre == ""){
@@ -77,6 +78,11 @@ function validar(){  //función para validar el presupuesto
         alert('Por favor, selecciona una opción de producto.');
         e.preventDefault();
     }
+    ////CONDICIONES PARA LA SUSCRIPCIÓN 
+    
+    if (suscripcion == null || suscripcion == "" || suscripcion <= 0) { 
+        alert("Por favor, introduce un número válido de meses de suscripción."); 
+        return false; }
     ////CONDICONES PARA LA POLITICA DE PRIVACIDAD
 
     if(!privacidad.checked){
@@ -116,15 +122,18 @@ function calcularTotal() {
                 total += parseFloat(extra.value);
             }
         }
+        const suscripcion = parseInt(document.getElementById('suscripcion').value); 
+        let descuento = 0; 
+        if (suscripcion >= 12) { 
+            descuento = descuentos['12']; 
+        } else if (suscripcion >= 3) { descuento = descuentos['3']; 
 
-        const suscripcion = document.getElementById('suscripcion').value; 
-        const descuento = descuentos[suscripcion]; 
-        total = total - (total * (descuento / 100)); 
-        document.getElementById('total').value = total.toFixed(2); 
-    }   
+        } else { descuento = descuentos['1']; 
 
-    document.getElementById('total').value = total;
-
+        } total = total - (total * (descuento / 100)); 
+        
+        document.getElementById('total').value = total.toFixed(2) ; 
+    }
 
     
 
